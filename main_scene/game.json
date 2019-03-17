@@ -126,6 +126,15 @@
         "name": "../assets/wsq.png",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "../assets/wsq1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "../assets/wsq1.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -166,13 +175,13 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 64,
-          "layer": "",
+          "height": 60,
+          "layer": "Char",
           "locked": false,
           "name": "Penguin",
-          "width": 64,
-          "x": 105,
-          "y": 296,
+          "width": 60,
+          "x": 5,
+          "y": 131,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -180,30 +189,15 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 600,
           "layer": "",
           "locked": false,
           "name": "Background",
-          "width": 0,
-          "x": 1,
+          "width": 798,
+          "x": 2,
           "y": 0,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 92,
-          "layer": "",
-          "locked": false,
-          "name": "Whsq",
-          "width": 163,
-          "x": 138,
-          "y": 259,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -215,7 +209,20 @@
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
-          "behaviors": [],
+          "behaviors": [
+            {
+              "acceleration": 400,
+              "allowDiagonals": false,
+              "angleOffset": 0,
+              "angularMaxSpeed": 180,
+              "deceleration": 800,
+              "ignoreDefaultControls": false,
+              "maxSpeed": 200,
+              "name": "TopDownMovement",
+              "rotateObject": true,
+              "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+            }
+          ],
           "animations": [
             {
               "name": "",
@@ -251,31 +258,11 @@
         {
           "height": 64,
           "name": "Background",
-          "texture": "../assets/wsq.png",
+          "texture": "../assets/wsq1.png",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 64,
           "variables": [],
           "behaviors": []
-        },
-        {
-          "name": "Whsq",
-          "type": "PrimitiveDrawing::Drawer",
-          "variables": [],
-          "behaviors": [],
-          "fillOpacity": 255,
-          "outlineSize": 2,
-          "outlineOpacity": 255,
-          "fillColor": {
-            "b": 255,
-            "g": 255,
-            "r": 1
-          },
-          "outlineColor": {
-            "b": 0,
-            "g": 0,
-            "r": 0
-          },
-          "absoluteCoordinates": false
         }
       ],
       "events": [],
@@ -296,9 +283,20 @@
             }
           ],
           "effects": []
+        },
+        {
+          "name": "Char",
+          "visibility": true,
+          "cameras": [],
+          "effects": []
         }
       ],
-      "behaviorsSharedData": []
+      "behaviorsSharedData": [
+        {
+          "name": "TopDownMovement",
+          "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+        }
+      ]
     }
   ],
   "externalEvents": [],
