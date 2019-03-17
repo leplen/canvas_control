@@ -135,6 +135,15 @@
         "name": "../assets/wsq1.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rsq-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rsq-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -180,8 +189,8 @@
           "locked": false,
           "name": "Penguin",
           "width": 60,
-          "x": 5,
-          "y": 131,
+          "x": 2,
+          "y": 130,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -195,9 +204,24 @@
           "locked": false,
           "name": "Background",
           "width": 798,
-          "x": 2,
+          "x": 0,
           "y": 0,
           "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "rsq",
+          "width": 0,
+          "x": 1092,
+          "y": 113,
+          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -219,7 +243,7 @@
               "ignoreDefaultControls": false,
               "maxSpeed": 200,
               "name": "TopDownMovement",
-              "rotateObject": true,
+              "rotateObject": false,
               "type": "TopDownMovementBehavior::TopDownMovementBehavior"
             }
           ],
@@ -263,9 +287,83 @@
           "width": 64,
           "variables": [],
           "behaviors": []
+        },
+        {
+          "name": "rsq",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "rsq",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "rsq-1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ],
-      "events": [],
+      "events": [
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "p"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "rsq",
+                "Penguin.X()",
+                "Penguin.Y()",
+                "\"Char\""
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        }
+      ],
       "layers": [
         {
           "name": "",
