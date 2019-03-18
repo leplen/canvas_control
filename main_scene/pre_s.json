@@ -13,7 +13,7 @@
     "macExecutableFilename": "",
     "orientation": "landscape",
     "packageName": "com.example.gamename",
-    "projectFile": "/home/ndl/projects/canvas_control/gdevelop/canvas_control/main_scene/game.json",
+    "projectFile": "/home/ndl/projects/canvas_control/gdevelop/canvas_control/main_scene/pre_s.json",
     "scaleMode": "linear",
     "sizeOnStartupMode": "adaptWidth",
     "useExternalSourceFiles": false,
@@ -270,46 +270,6 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "Paint",
-          "locked": false,
-          "name": "blsq",
-          "width": 0,
-          "x": 382,
-          "y": 129,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Color",
-              "children": [
-                {
-                  "name": "c2",
-                  "value": ""
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "rsq",
-          "width": 0,
-          "x": 385,
-          "y": 321,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
         }
       ],
       "objects": [
@@ -459,25 +419,14 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Delete"
-              },
-              "parameters": [
-                "Paints",
-                ""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
                 "value": "Create"
               },
               "parameters": [
                 "",
                 "rsq",
-                "round(Penguin.X()/64)*64",
-                "round(Penguin.Y()/64)*64",
-                "\"Paint\""
+                "Penguin.X()",
+                "Penguin.Y()",
+                "\"Char\""
               ],
               "subInstructions": []
             }
@@ -649,7 +598,7 @@
           ],
           "events": []
         },
-        {
+				{
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
@@ -682,7 +631,7 @@
           ],
           "events": []
         },
-        {
+				{
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
@@ -715,7 +664,7 @@
           ],
           "events": []
         },
-        {
+				{
           "disabled": false,
           "folded": false,
           "type": "BuiltinCommonInstructions::Standard",
@@ -747,41 +696,6 @@
             }
           ],
           "events": []
-        },
-        {
-          "disabled": false,
-          "folded": false,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "KeyReleased"
-              },
-              "parameters": [
-                "",
-                "o"
-              ],
-              "subInstructions": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "inverted": false,
-                "value": "Create"
-              },
-              "parameters": [
-                "",
-                "blsq",
-                "Penguin.X()",
-                "Penguin.Y()",
-                "\"Paint\""
-              ],
-              "subInstructions": []
-            }
-          ],
-          "events": []
         }
       ],
       "layers": [
@@ -800,12 +714,6 @@
               "width": 0
             }
           ],
-          "effects": []
-        },
-        {
-          "name": "Paint",
-          "visibility": true,
-          "cameras": [],
           "effects": []
         },
         {

@@ -1,0 +1,3 @@
+If you want to edit the game.json file directly, it helps to cp a version of the file, then make a change in the editor, and then diff the outputs to see how it's mapping.
+The json is pretty straight-forward to read, but only if you've already used the GUI editor as many parameters are stored in position based arrays corresponding to the
+UI layout in gdevelop instead of being in key:value pairs. 
