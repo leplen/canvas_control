@@ -138,15 +138,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "rsq-1.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "rsq-1.png",
-        "smoothed": true,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "NewObject-1.png",
         "kind": "image",
         "metadata": "",
@@ -162,6 +153,24 @@
         "name": "NewObject-1-0.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "rsq-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "rsq-1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "NewFile-1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "NewFile-1.png",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -202,9 +211,6 @@
           "objects": [
             {
               "name": "rsq"
-            },
-            {
-              "name": "blsq"
             }
           ]
         }
@@ -219,8 +225,8 @@
           "locked": false,
           "name": "Penguin",
           "width": 60,
-          "x": 2,
-          "y": 130,
+          "x": 128,
+          "y": 128,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -249,7 +255,7 @@
           "locked": false,
           "name": "Background",
           "width": 798,
-          "x": 0,
+          "x": 64,
           "y": 0,
           "zOrder": 3,
           "numberProperties": [],
@@ -275,26 +281,16 @@
           "angle": 0,
           "customSize": false,
           "height": 0,
-          "layer": "Paint",
+          "layer": "",
           "locked": false,
-          "name": "blsq",
+          "name": "pickColor",
           "width": 0,
-          "x": 382,
-          "y": 129,
-          "zOrder": 5,
+          "x": 0,
+          "y": 288,
+          "zOrder": 7,
           "numberProperties": [],
           "stringProperties": [],
-          "initialVariables": [
-            {
-              "name": "Color",
-              "children": [
-                {
-                  "name": "c2",
-                  "value": ""
-                }
-              ]
-            }
-          ]
+          "initialVariables": []
         },
         {
           "angle": 0,
@@ -302,11 +298,116 @@
           "height": 0,
           "layer": "",
           "locked": false,
-          "name": "rsq",
+          "name": "pickColor",
           "width": 0,
-          "x": 385,
-          "y": 321,
-          "zOrder": 6,
+          "x": 0,
+          "y": 352,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "pickColor",
+          "width": 0,
+          "x": 0,
+          "y": 224,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "pickColor",
+          "width": 0,
+          "x": 0,
+          "y": 160,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "pickColor",
+          "width": 0,
+          "x": 0,
+          "y": 96,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "pickColor",
+          "width": 0,
+          "x": 0,
+          "y": 416,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "pickColor",
+          "width": 0,
+          "x": 0,
+          "y": 480,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "locked": false,
+          "name": "pickColor",
+          "width": 0,
+          "x": 0,
+          "y": 32,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 608,
+          "layer": "",
+          "locked": false,
+          "name": "pallete",
+          "width": 64,
+          "x": 0,
+          "y": 0,
+          "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -399,14 +500,14 @@
           ]
         },
         {
-          "name": "blsq",
+          "name": "pickColor",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
           "behaviors": [],
           "animations": [
             {
-              "name": "",
+              "name": "whiteBox",
               "useMultipleDirections": false,
               "directions": [
                 {
@@ -435,6 +536,15 @@
               ]
             }
           ]
+        },
+        {
+          "height": 32,
+          "name": "pallete",
+          "texture": "NewFile-1.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -446,11 +556,10 @@
             {
               "type": {
                 "inverted": false,
-                "value": "KeyReleased"
+                "value": "DepartScene"
               },
               "parameters": [
-                "",
-                "p"
+                ""
               ],
               "subInstructions": []
             }
@@ -459,30 +568,72 @@
             {
               "type": {
                 "inverted": false,
-                "value": "Delete"
+                "value": "ModVarObjetTxt"
               },
               "parameters": [
-                "Paints",
-                ""
+                "pallete",
+                "color",
+                "=",
+                "ToString(Random(255))+\";\"+ToString(Random(255))+\";\"+ToString(Random(255))"
               ],
               "subInstructions": []
             },
             {
               "type": {
                 "inverted": false,
-                "value": "Create"
+                "value": "ChangeColor"
               },
               "parameters": [
-                "",
-                "rsq",
-                "round(Penguin.X()/64)*64",
-                "round(Penguin.Y()/64)*64",
-                "\"Paint\""
+                "pallete",
+                "pallete.VariableString(color)"
               ],
               "subInstructions": []
             }
           ],
-          "events": []
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::ForEach",
+              "object": "pickColor",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "pickColor",
+                    "color",
+                    "=",
+                    "ToString(Random(255))+\";\"+ToString(Random(255))+\";\"+ToString(Random(255))"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ChangeColor"
+                  },
+                  "parameters": [
+                    "pickColor",
+                    "pickColor.VariableString(color)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            }
+          ]
         },
         {
           "disabled": false,
@@ -773,15 +924,129 @@
               },
               "parameters": [
                 "",
-                "blsq",
+                "rsq",
                 "Penguin.X()",
                 "Penguin.Y()",
                 "\"Paint\""
               ],
               "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Paints",
+                "Paints.VariableString(color)"
+              ],
+              "subInstructions": []
             }
           ],
           "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "KeyReleased"
+              },
+              "parameters": [
+                "",
+                "i"
+              ],
+              "subInstructions": []
+            },
+            {
+              "type": {
+                "inverted": false,
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Paints",
+                "Penguin",
+                "",
+                "",
+                "yes"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "ChangeColor"
+              },
+              "parameters": [
+                "Paints",
+                "Paints.VariableString(color)"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MouseButtonReleased"
+              },
+              "parameters": [
+                "",
+                "Left"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "SourisSurObjet"
+                  },
+                  "parameters": [
+                    "pickColor",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "ModVarObjetTxt"
+                  },
+                  "parameters": [
+                    "Paints",
+                    "color",
+                    "=",
+                    "pickColor.VariableString(color)"
+                  ],
+                  "subInstructions": []
+                }
+              ],
+              "events": []
+            }
+          ]
         }
       ],
       "layers": [
