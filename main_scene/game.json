@@ -236,8 +236,8 @@
           "locked": false,
           "name": "Penguin",
           "width": 60,
-          "x": 128,
-          "y": 128,
+          "x": 158,
+          "y": 132,
           "zOrder": 1,
           "numberProperties": [],
           "stringProperties": [],
@@ -265,25 +265,10 @@
           "layer": "",
           "locked": false,
           "name": "Background",
-          "width": 798,
-          "x": 64,
+          "width": 773,
+          "x": 28,
           "y": 0,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "locked": false,
-          "name": "rsq",
-          "width": 0,
-          "x": 1092,
-          "y": 113,
-          "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -635,6 +620,23 @@
                 }
               ],
               "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Repeat",
+              "repeatExpression": "",
+              "conditions": [],
+              "actions": [],
+              "events": []
+            },
+            {
+              "disabled": false,
+              "folded": false,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [],
+              "events": []
             }
           ]
         },
@@ -684,13 +686,33 @@
             {
               "type": {
                 "inverted": false,
-                "value": "KeyReleased"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "w"
-              ],
-              "subInstructions": []
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "w"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Up"
+                  ],
+                  "subInstructions": []
+                }
+              ]
             }
           ],
           "actions": [
@@ -707,45 +729,20 @@
               "subInstructions": []
             }
           ],
-          "events": [
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Up"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Penguin",
-                    "-",
-                    "64"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
                 {
                   "type": {
                     "inverted": false,
@@ -756,29 +753,7 @@
                     "s"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Penguin",
-                    "+",
-                    "64"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -790,94 +765,37 @@
                   ],
                   "subInstructions": []
                 }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreY"
-                  },
-                  "parameters": [
-                    "Penguin",
-                    "+",
-                    "64"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
+              ]
+            }
+          ],
+          "actions": [
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "d"
-                  ],
-                  "subInstructions": []
-                }
+              "type": {
+                "inverted": false,
+                "value": "MettreY"
+              },
+              "parameters": [
+                "Penguin",
+                "+",
+                "64"
               ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "Penguin",
-                    "+",
-                    "64"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
             {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "KeyReleased"
-                  },
-                  "parameters": [
-                    "",
-                    "Right"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "Penguin",
-                    "+",
-                    "64"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
                 {
                   "type": {
                     "inverted": false,
@@ -888,29 +806,7 @@
                     "a"
                   ],
                   "subInstructions": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "inverted": false,
-                    "value": "MettreX"
-                  },
-                  "parameters": [
-                    "Penguin",
-                    "-",
-                    "64"
-                  ],
-                  "subInstructions": []
-                }
-              ],
-              "events": []
-            },
-            {
-              "disabled": false,
-              "folded": false,
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
                     "inverted": false,
@@ -922,24 +818,92 @@
                   ],
                   "subInstructions": []
                 }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Penguin",
+                "-",
+                "64"
               ],
-              "actions": [
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
                 {
                   "type": {
                     "inverted": false,
-                    "value": "MettreX"
+                    "value": "KeyReleased"
                   },
                   "parameters": [
-                    "Penguin",
-                    "-",
-                    "64"
+                    "",
+                    "d"
+                  ],
+                  "subInstructions": []
+                },
+                {
+                  "type": {
+                    "inverted": false,
+                    "value": "KeyReleased"
+                  },
+                  "parameters": [
+                    "",
+                    "Right"
                   ],
                   "subInstructions": []
                 }
-              ],
-              "events": []
+              ]
             }
-          ]
+          ],
+          "actions": [
+            {
+              "type": {
+                "inverted": false,
+                "value": "MettreX"
+              },
+              "parameters": [
+                "Penguin",
+                "+",
+                "64"
+              ],
+              "subInstructions": []
+            }
+          ],
+          "events": []
+        },
+        {
+          "disabled": false,
+          "folded": false,
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Painting",
+          "comment2": ""
         },
         {
           "disabled": false,
@@ -970,17 +934,6 @@
                 "Penguin.X()",
                 "Penguin.Y()",
                 "\"Paint\""
-              ],
-              "subInstructions": []
-            },
-            {
-              "type": {
-                "inverted": false,
-                "value": "ChangeColor"
-              },
-              "parameters": [
-                "Paints",
-                "Paints.VariableString(color)"
               ],
               "subInstructions": []
             }
